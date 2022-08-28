@@ -1,0 +1,562 @@
+.header{
+   background-color: #fff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+}
+.nav-container{
+    max-width: 130rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo-img{
+    height: 8rem;
+    width: 100%;
+}
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.nav-item-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.nav-item-link:hover{
+    color: #EB5B52;
+}
+.nav-item-link-icon{
+    margin-left: 4px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.nav-right{
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    font-size: 2rem;
+    color: #000;
+}
+.nav-right span{
+    cursor: pointer;
+}
+.log-in{
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.log-in:hover{
+    color: #EB5B52;
+}
+.nav-right span:hover{
+    color: #EB5B52;
+}
+.btn-mobile-nav{
+    display: none;
+}
+
+/* ********************hero Section*************** */
+.section-hero{
+    background-color: #FCEBC1;
+    padding: 7.5rem 0 7.5rem 0;
+}
+.section-hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.section-hero-left{
+    width: 600px;
+}
+.hero-title{
+    font-size: 3.5rem;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 1.2;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+}
+.hero-description{
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 1.2;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+}
+.section-hero-right{
+    height: 600px;
+    width: 100%;
+    background-image: url(../images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash-removebg-preview.png);
+    background-repeat: no-repeat;
+    margin-top: 7.5rem;
+    background-size: 450px;
+    background-position: bottom right;
+}
+/* *****************Section Why************************** */
+.why-section{
+    padding: 10rem 0 0 0;
+}
+.section-why{
+    display: grid;
+    column-gap: 8rem;
+}
+.section-why-card{
+    text-align: center;
+    padding: 5rem 1rem;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.section-why-icon{
+    font-size: 6rem;
+    color: #EB5B52;
+}
+.section-why-description{
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 400;
+    letter-spacing: 1.2;
+    line-height: 1.2;
+    width: 90%;
+    margin: 0 auto;
+}
+.section-why-card:hover{
+    background-color: #EB5B52;
+    border-radius: 5px;
+}
+.section-why-card:hover .section-why-icon{
+    color: #fff;
+}
+.section-why-card:hover .section-why-description{
+    color: #fff;
+}
+.section-why-card:hover .heading-tertiary{
+    color: #fff;
+}
+
+
+/* ******************New Product Section**************** */
+.new-product-section{
+    padding-bottom: 10rem;
+}
+.new-product-section-heading{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.new-products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.new-product{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding-bottom: 2rem;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+.new-product::after{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;  
+}
+.new-product::after{
+    content: "sale";
+    top: 0;
+    right: 0;
+    padding: 3px 5px;
+    background-color: #EB5B52;
+    color: #fff;
+    border-radius: 0 5px 0 0;
+}
+
+.product-logo-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+}
+.ck{
+    color: #EB5B52;
+}
+.new-product-card-text{
+    padding: 0 1rem;
+}
+.new-product-review{
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
+}
+.review{
+    margin-left: 5px;
+}
+.new-product-prices{
+    font-size: 1.6rem;
+    font-family: inherit;
+}
+.new-product-regular-price{
+    color: #ff0000;
+    /* padding-right: 12rem; */
+    
+}
+.new-product-recent-price{
+    color: green;
+    float: right;
+    padding-right: 1rem;
+}
+.font-sans{
+    font-family: sans-serif;
+}
+
+/* ******************Choice Section***************** */
+.choice-section{
+    /* background-color: rgb(233, 228, 228); */
+    background-color: #FCEBC1;
+    padding: 2rem 0 10rem 0;
+}
+.choice-section-heading{
+    text-align: center;
+    padding: 5rem;
+}
+.section-choice-products{
+    display: grid;
+    grid-template-areas: 
+    "a a a b b c c"
+    "d d e e f f f"
+    ;
+    gap: 1rem;
+}
+.section-choice-product:nth-child(1){
+    grid-area: a;
+}
+.section-choice-product:nth-child(2){
+    grid-area: b;
+}
+.section-choice-product:nth-child(3){
+    grid-area: c;
+}
+.section-choice-product:nth-child(4){
+    grid-area: d;
+}
+.section-choice-product:nth-child(5){
+    grid-area: e;
+}
+.section-choice-product:nth-child(6){
+    grid-area: f;
+}
+.section-choice-product img{
+    height: 100%;
+    width: 100%;
+}
+
+/* *****************Best Saleing Section********************* */
+.best-seling-section{
+    padding: 10rem 0;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 5.6rem;
+    column-gap: 2rem;   
+}
+.item{
+    cursor: pointer;
+    height: 35rem;
+    position: relative;
+    transition: all 0.3s;
+}
+.item:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.wishlist{
+    position: absolute;
+    top: 1000000px;
+    right: 5px;
+    font-size: 2.4rem;
+    padding: 0.8rem 1rem;
+    color: #EB5B52;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.item:hover .wishlist{
+    visibility: visible;
+    top: 5px;
+}
+.item-text{
+    padding: 0 1.5rem;
+    text-align: center;
+}
+.item-img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: 50%;
+}
+.add-btn{
+    text-align: center;
+}
+.add-to-cut:link,
+.add-to-cut:visited{
+    margin-top: 1.2rem;
+    display: inline-block;
+    background-color: #EB5B52;
+    padding: 0.6rem 1.6rem;
+    color: #fff;
+    border-radius: 9px;
+    transition: all 0.3s;
+    outline: 2px solid #EB5B52;
+}
+.add-to-cut:hover,
+.add-to-cut:active{
+    color: #EB5B52;
+    background-color: transparent;
+    outline: 2px solid #EB5B52;
+}
+.see-more{
+    text-align: center;
+    margin-top: 5rem;
+}
+/* ****************arm chair**************** */
+.armchair-section{
+    padding-bottom: 10rem;
+}
+.armchair-img{
+    height: 98%;
+    opacity: 0.8;
+}
+.armchair-section-left-title{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #dc143c;
+    text-transform: capitalize;
+    width: 60%;
+}
+.armchair-section-left-desc{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #872657;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+.arm-btn{
+    border: 2px solid #872657;
+    color: #fff;
+    background-color: #872657;
+    padding: 0.6rem 1.4rem;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+.arm-btn:hover{
+    border: 2px solid #872657;
+    color: #872657;
+    background-color: transparent;
+}
+.section-armchair{
+    display: grid;
+    gap: 1rem;
+}
+.armchair-section-left{
+    position: relative;
+}
+.armchair-section-left-text{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+.right-left-img{
+    width: 100%;
+    height: 95%;
+    opacity: 0.8;
+}
+.armchair-section-right-top{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.armchair-section-right-left{
+    position: relative;
+    height: 100%;
+}
+.armchair-section-right-text{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+.armchair-section-right-title{
+    font-size: 2rem;
+    color: rgb(247, 4, 53);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.armchair-section-right-price{
+    font-size: 1.6rem;
+    color: #872657;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
+
+/* ******************review section******************* */
+.section-review{
+    padding-bottom: 10rem;
+}
+.reviews{
+    display: grid;
+    text-align: center;
+    gap: 8rem;
+}
+.review-icon{
+    font-size: 6rem;
+    color: #EB5B52;
+}
+.review-text{
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: #333;
+}
+.review-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 3rem;
+}
+.reviewman{
+    padding: 3rem 0;
+    transition: all 0.6s;
+    border-radius: 5px;
+}
+.reviewman:hover{
+    background-color: #EB5B52;
+}
+.reviewman:hover .review-text{
+    color: #FFF;
+}
+.reviewman:hover .review-icon{
+    color: #FFF;
+}
+
+
+/* *****************News latter******************* */
+.news-letter{
+    padding-bottom: 10rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subcription-form{
+    outline: none;
+    border: none;
+    padding: 2rem 2rem;
+    background-color: #EB5B52;
+    border-radius:  5px 0 0 5px;
+    width: 50%;
+    font-size: 2rem;
+}
+.news-letter input::placeholder{
+    color: #FFF;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+
+}
+.subscribe{
+    font-size: 2rem;
+    color: #FFF;
+    background-color: #000;
+    padding: 2rem;
+    border-radius: 0 9px 9px 0;
+    text-transform: uppercase;
+}
+
+/* *****************Footer**************** */
+.footer-section{
+    padding: 6rem 0;
+    background-color: #FCEBC1;
+}
+.section-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+.footer-left{
+    margin-top: -2rem;
+}
+.footer-img{
+    height: 7rem;
+    width: 40%;
+}
+.footer-desc{
+    font-size: 1.2rem;
+    color: #333;
+    margin: 1rem 0;
+}
+.footer-icon{
+    padding: 1.4rem;
+    font-size: 2.5rem;
+    color: #EB5B52;
+}
+.footer-icon:first-child{
+    padding-left: 0;
+}
+.heading-footer{
+    font-size: 2rem;
+    color: #000;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.footer-middle{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.about{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #333;
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.m{
+    font-family: sans-serif;
+}
+.mobile{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.copywright{
+    background-color: #000;
+    padding: 2rem 0;
+    text-align: center;
+    color: #FFF;
+    font-size: 1.2rem;
+}
+.footer-left-text span{
+    color: red;
+}
+
+
